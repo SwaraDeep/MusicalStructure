@@ -11,7 +11,7 @@ public class album_list extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_item);
+        setContentView(R.layout.song_list);
 
         ArrayList<song> tracks = new ArrayList<>();
         tracks.add(new song("Track 1"));
