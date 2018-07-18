@@ -3,7 +3,7 @@
     android:id="@+id/albumsGridView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:numColumns="3">
+    android:numColumns="3"
+    android:padding="16dp">
 
 </GridView>
