@@ -12,7 +12,6 @@ public class album_list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.album_grid_view);
-
         ArrayList<song> tracks = new ArrayList<>();
         tracks.add(new song("Album 1"));
         tracks.add(new song("Album 2"));
@@ -24,7 +23,6 @@ public class album_list extends AppCompatActivity {
         tracks.add(new song("Album 8"));
         tracks.add(new song("Album 9"));
         tracks.add(new song("Album 10"));
-
         customAdapter adapter = new customAdapter(this, tracks);
         GridView songList = (GridView) findViewById(R.id.albumsGridView);
         songList.setAdapter(adapter);

@@ -1,7 +1,7 @@
 package com.example.unknown.musicalstructure;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -12,7 +12,6 @@ public class track_list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
-
         ArrayList<song> tracks = new ArrayList<>();
         tracks.add(new song("Track 1"));
         tracks.add(new song("Track 2"));
@@ -24,9 +23,8 @@ public class track_list extends AppCompatActivity {
         tracks.add(new song("Track 8"));
         tracks.add(new song("Track 9"));
         tracks.add(new song("Track 10"));
-
         customAdapter adapter = new customAdapter(this, tracks);
-        ListView songList = (ListView)findViewById(R.id.list);
+        ListView songList = (ListView) findViewById(R.id.list);
         songList.setAdapter(adapter);
     }
 }

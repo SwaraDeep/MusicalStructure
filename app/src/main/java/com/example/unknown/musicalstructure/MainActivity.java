@@ -13,13 +13,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        final TextView tracks = (TextView)findViewById(R.id.tracks);
-        final TextView artist = (TextView)findViewById(R.id.artist);
-        final TextView album = (TextView)findViewById(R.id.albums);
+        final TextView tracks = (TextView) findViewById(R.id.tracks);
+        final TextView artist = (TextView) findViewById(R.id.artist);
+        final TextView album = (TextView) findViewById(R.id.albums);
         final TextView nowplaying = (TextView) findViewById(R.id.nowplaying);
         final RelativeLayout nowPlaying = (RelativeLayout) findViewById(R.id.now_playing_bar);
-
         tracks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,6 +46,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent nowPlaying = new Intent(MainActivity.this, now_playing.class);
+                startActivity(nowPlaying);
+            }
+        });
+
+        artist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent nowPlaying = new Intent(MainActivity.this, artist_name.class);
                 startActivity(nowPlaying);
             }
         });

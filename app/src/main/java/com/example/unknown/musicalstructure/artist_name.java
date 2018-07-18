@@ -12,7 +12,6 @@ public class artist_name extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
-
         ArrayList<song> tracks = new ArrayList<>();
         tracks.add(new song("Artist 1"));
         tracks.add(new song("Artist 2"));
@@ -24,7 +23,6 @@ public class artist_name extends AppCompatActivity {
         tracks.add(new song("Artist 8"));
         tracks.add(new song("Artist 9"));
         tracks.add(new song("Artist 10"));
-
         customAdapter adapter = new customAdapter(this, tracks);
         ListView songList = (ListView) findViewById(R.id.list);
         songList.setAdapter(adapter);

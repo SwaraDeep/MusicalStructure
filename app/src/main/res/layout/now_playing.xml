@@ -16,28 +16,28 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/TrackName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Track 1"
-                android:textSize="30sp"
-                android:textColor="@android:color/black"
-                android:layout_marginTop="16dp"
-                android:id="@+id/TrackName"
+                android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:layout_marginLeft="16dp" />
+                android:text="Track 1"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Artist 1"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:textColor="@android:color/black"
-                android:layout_marginBottom="16dp"
                 android:layout_below="@+id/TrackName"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:layout_marginLeft="16dp" />
+                android:gravity="center"
+                android:text="Artist 1"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
 
 
             <ImageView
@@ -80,7 +80,7 @@
             android:id="@+id/now_playing"
             android:layout_width="match_parent"
             android:layout_height="85dp"
-            android:background="#ff6316"
+            android:background="#e2ddda"
             android:orientation="horizontal">
 
             <ImageButton
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:background="@drawable/play" />
+                android:background="@drawable/play_orange" />
 
             <ImageButton
                 android:id="@+id/nextBtn"

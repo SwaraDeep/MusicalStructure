@@ -24,9 +24,11 @@
             android:label="Albums" />
         <activity
             android:name=".now_playing"
-            android:label="Now Playing">
+            android:label="Now Playing" />
+        <activity
+            android:name=".artist_name"
+            android:label="Artists" />
 
-        </activity>
     </application>
 
 </manifest>
