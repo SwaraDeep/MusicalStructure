@@ -24,8 +24,10 @@ public class customAdapter extends ArrayAdapter<song> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
         song song = getItem(position);
-        TextView name = (TextView) listItemView.findViewById(R.id.song_name);
-        name.setText(song.getName());
+        TextView track = (TextView) listItemView.findViewById(R.id.song_name);
+        track.setText(song.getName());
+        TextView artist = (TextView) listItemView.findViewById(R.id.artist_name);
+        artist.setText(song.getArtistName());
         return listItemView;
     }
 }
