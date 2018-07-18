@@ -1,9 +1,10 @@
 package com.example.unknown.musicalstructure;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
         final TextView tracks = (TextView)findViewById(R.id.tracks);
         final TextView artist = (TextView)findViewById(R.id.artist);
         final TextView album = (TextView)findViewById(R.id.albums);
-        final TextView playList = (TextView)findViewById(R.id.playList);
+        final TextView playList = (TextView) findViewById(R.id.nowplaying);
+        final RelativeLayout nowPlaying = (RelativeLayout) findViewById(R.id.now_playing_bar);
 
         tracks.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +33,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent trackList = new Intent(MainActivity.this, album_list.class);
                 startActivity(trackList);
+            }
+        });
+
+        nowPlaying.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent nowPlaying = new Intent(MainActivity.this, now_playing.class);
+                startActivity(nowPlaying);
+            }
+        });
+
+        playList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent nowPlaying = new Intent(MainActivity.this, now_playing.class);
+                startActivity(nowPlaying);
             }
         });
     }
