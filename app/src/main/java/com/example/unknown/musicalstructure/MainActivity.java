@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         final TextView tracks = (TextView)findViewById(R.id.tracks);
         final TextView artist = (TextView)findViewById(R.id.artist);
         final TextView album = (TextView)findViewById(R.id.albums);
-        final TextView playList = (TextView) findViewById(R.id.nowplaying);
+        final TextView nowplaying = (TextView) findViewById(R.id.nowplaying);
         final RelativeLayout nowPlaying = (RelativeLayout) findViewById(R.id.now_playing_bar);
 
         tracks.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        playList.setOnClickListener(new View.OnClickListener() {
+        nowplaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent nowPlaying = new Intent(MainActivity.this, now_playing.class);
