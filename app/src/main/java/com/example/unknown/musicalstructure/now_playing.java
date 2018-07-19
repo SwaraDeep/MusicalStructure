@@ -9,5 +9,6 @@ public class now_playing extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.now_playing);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

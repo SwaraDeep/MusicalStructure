@@ -82,7 +82,7 @@
             android:id="@+id/now_playing"
             android:layout_width="match_parent"
             android:layout_height="85dp"
-            android:background="#e2ddda"
+            android:background="#FFFF6316"
             android:orientation="horizontal">
 
             <ImageButton
@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                android:background="@drawable/play_orange" />
+                android:background="@drawable/play" />
 
             <ImageButton
                 android:id="@+id/nextBtn"
@@ -112,8 +112,8 @@
                 android:background="@drawable/previous" />
 
             <ImageButton
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:layout_toLeftOf="@id/previousBtn"
@@ -121,8 +121,8 @@
 
 
             <ImageButton
-                android:layout_width="55dp"
-                android:layout_height="55dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_margin="16dp"
                 android:layout_toRightOf="@id/nextBtn"
